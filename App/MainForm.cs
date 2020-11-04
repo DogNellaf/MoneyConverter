@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,14 +21,43 @@ namespace App
 
         private void ReloadAllValues()
         {
-            ReloadUSD();
+            ReloadSomething("USD");
+            ReloadSomething("EUR");
+            ReloadSomething("GBP");
+            ReloadSomething("CHF");
+            ReloadSomething("JPY");
+            ReloadRub();
         }
 
-        private void ReloadUSD()
+        private void ReloadSomething(string name)
         {
             DB database = new DB();
-            DataTable select = DB.
+            DataTable values = database.QueryToBase($"SELECT * FROM `money` WHERE name = '{name}'");
 
+            var buySum = Controls[$"textbox_{name}_BUY_SUM"];
+            buySum.Text = "0";
+
+            var sellSum = Controls[$"textbox_{name}_SELL_SUM"];
+            sellSum.Text = "0";
+
+            var sale = Controls[$"textbox_{name}_SALE"];
+            sale.Text = "0";
+
+            var sellRate = Controls[$"textbox_{name}_SELL_RATE"];
+            sellRate.Text = values.Rows[0].ItemArray[3].ToString();
+
+            var buyRate = Controls[$"textbox_{name}_BUY_RATE"];
+            buyRate.Text = values.Rows[0].ItemArray[2].ToString();
+
+            var amount = Controls[$"textbox_{name}_AMOUNT"];
+            amount.Text = values.Rows[0].ItemArray[4].ToString();
+        }
+
+        private void ReloadRub()
+        {
+            DB database = new DB();
+            DataTable values = database.QueryToBase($"SELECT * FROM `money` WHERE name = 'RUB'");
+            textBox_RUB_AMOUNT.Text = values.Rows[0].ItemArray[4].ToString();
         }
 
         //расчет итогового изменения национальной валюты
@@ -179,6 +209,115 @@ namespace App
                 textBox_JPY_RUB.Text = GetRubAmount(textbox_JPY_SELL_RATE.Text, textbox_JPY_BUY_RATE.Text, textBox_JPY_SELL_SUM, textBox_JPY_BUY_SUM,
                     textBox_JPY_SALE);
             }
+        }
+
+        private void button_reload_Click(object sender, EventArgs e)
+        {
+            DB database = new DB();
+            UpdateRub(database);
+
+            ReloadSomething("USD");
+            ReloadSomething("EUR");
+            ReloadSomething("EUR");
+            ReloadSomething("GBP");
+            ReloadSomething("CHF");
+            ReloadSomething("JPY");
+            ReloadRub();
+        }
+
+        private void UpdateAmount(string name, DB database)
+        {
+            string amountStr = Controls[$"textBox_{name}_AMOUNT"].Text;
+            double amount = double.Parse(amountStr);
+
+            double changing = GetMoneyChange(name);
+            SetQuery(amount, changing, name, database);
+        }
+       
+        private bool CheckCanChange(string name)
+        {
+            string amountStr = Controls[$"textBox_{name}_AMOUNT"].Text;
+            double amount = double.Parse(amountStr);
+
+            double changing = GetMoneyChange(name);
+
+            if (changing < 0)
+            {
+                if (amount >= -1 * changing)
+                {
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show($"У вас недостаточно {name}!");
+                    return false;
+                }
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        private void SetQuery(double amount, double changing, string name, DB database)
+        {
+            string result = $"{amount + changing}";
+            result = result.Replace(',', '.');
+
+            database.QueryToBase($"UPDATE `money` SET `amount` = {result} WHERE name = '{name}'");
+        }
+
+        private void UpdateRub(DB database)
+        {
+            double amount = double.Parse(Controls[$"textBox_RUB_AMOUNT"].Text);
+
+            //пытаемся перевести доллары
+            if (CheckCanChange("USD") && -1 * double.Parse(textBox_USD_RUB.Text) < amount)
+            {
+                UpdateAmount("USD", database);
+                amount += double.Parse(textBox_USD_RUB.Text);
+            }
+
+            //пытаемся перевести евро
+            if (CheckCanChange("EUR") && -1 * double.Parse(textBox_EUR_RUB.Text) < amount)
+            {
+                UpdateAmount("EUR", database);
+                amount += double.Parse(textBox_EUR_RUB.Text);
+            }
+
+            if (CheckCanChange("GBP") && -1 * double.Parse(textBox_GBP_RUB.Text) < amount)
+            {
+                UpdateAmount("GBP", database);
+                amount += double.Parse(textBox_GBP_RUB.Text);
+            }
+
+            if (CheckCanChange("CHF") && -1 * double.Parse(textBox_CHF_RUB.Text) < amount)
+            {
+                UpdateAmount("CHF", database);
+                amount += double.Parse(textBox_CHF_RUB.Text);
+            }
+
+            if (CheckCanChange("JPY") && -1 * double.Parse(textBox_JPY_RUB.Text) < amount)
+            {
+                UpdateAmount("JPY", database);
+                amount += double.Parse(textBox_JPY_RUB.Text);
+            }
+
+            string result = $"{amount}";
+            result = result.Replace(',', '.');
+
+            database.QueryToBase($"UPDATE `money` SET `amount` = {result} WHERE name = 'RUB'");
+        }
+
+        private double GetMoneyChange(string name)
+        {
+            var buySum = Controls[$"textBox_{name}_BUY_SUM"];
+
+            var sellSum = Controls[$"textBox_{name}_SELL_SUM"];
+
+            double result = double.Parse(buySum.Text) - double.Parse(sellSum.Text);
+
+            return result;
         }
 
         private void textBox_EUR_RUB_TextChanged(object sender, EventArgs e)

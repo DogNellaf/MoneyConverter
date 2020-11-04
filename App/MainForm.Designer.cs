@@ -87,10 +87,10 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textBox52 = new System.Windows.Forms.TextBox();
             this.textBox_JPY_AMOUNT = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_reload = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox228 = new System.Windows.Forms.TextBox();
+            this.textBox_RUB_AMOUNT = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -785,39 +785,41 @@
             this.textBox_JPY_AMOUNT.Text = "0";
             this.textBox_JPY_AMOUNT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // button_reload
             // 
-            this.button1.Location = new System.Drawing.Point(320, 516);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(577, 23);
-            this.button1.TabIndex = 58;
-            this.button1.Text = "Сохранить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_reload.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_reload.Location = new System.Drawing.Point(320, 516);
+            this.button_reload.Name = "button_reload";
+            this.button_reload.Size = new System.Drawing.Size(577, 23);
+            this.button_reload.TabIndex = 58;
+            this.button_reload.Text = "Сохранить";
+            this.button_reload.UseVisualStyleBackColor = true;
+            this.button_reload.Click += new System.EventHandler(this.button_reload_Click);
             // 
-            // textBox16
+            // textBox228
             // 
-            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox16.Location = new System.Drawing.Point(1, 516);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(200, 23);
-            this.textBox16.TabIndex = 59;
-            this.textBox16.Text = "Остаток нац. валюты";
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox228.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox228.Location = new System.Drawing.Point(1, 516);
+            this.textBox228.Multiline = true;
+            this.textBox228.Name = "textBox228";
+            this.textBox228.ReadOnly = true;
+            this.textBox228.Size = new System.Drawing.Size(200, 23);
+            this.textBox228.TabIndex = 59;
+            this.textBox228.Text = "Остаток нац. валюты";
+            this.textBox228.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox17
+            // textBox_RUB_AMOUNT
             // 
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox17.Location = new System.Drawing.Point(207, 516);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(107, 23);
-            this.textBox17.TabIndex = 60;
-            this.textBox17.Text = "JPY";
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox17.TextChanged += new System.EventHandler(this.textBox17_TextChanged_1);
+            this.textBox_RUB_AMOUNT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_RUB_AMOUNT.Location = new System.Drawing.Point(207, 516);
+            this.textBox_RUB_AMOUNT.Multiline = true;
+            this.textBox_RUB_AMOUNT.Name = "textBox_RUB_AMOUNT";
+            this.textBox_RUB_AMOUNT.ReadOnly = true;
+            this.textBox_RUB_AMOUNT.Size = new System.Drawing.Size(107, 23);
+            this.textBox_RUB_AMOUNT.TabIndex = 60;
+            this.textBox_RUB_AMOUNT.Text = "JPY";
+            this.textBox_RUB_AMOUNT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_RUB_AMOUNT.TextChanged += new System.EventHandler(this.textBox17_TextChanged_1);
             // 
             // MainForm
             // 
@@ -825,9 +827,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(909, 551);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox_RUB_AMOUNT);
+            this.Controls.Add(this.textBox228);
+            this.Controls.Add(this.button_reload);
             this.Controls.Add(this.textBox_JPY_RUB);
             this.Controls.Add(this.textBox_JPY_SALE);
             this.Controls.Add(this.textBox_JPY_SELL_SUM);
@@ -958,9 +960,9 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox textBox52;
         private System.Windows.Forms.TextBox textBox_JPY_AMOUNT;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_reload;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox228;
+        private System.Windows.Forms.TextBox textBox_RUB_AMOUNT;
     }
 }
