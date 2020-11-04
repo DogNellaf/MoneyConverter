@@ -104,6 +104,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Images\chf.jpg" />
     <Content Include="Images\eu.gif" />
     <Content Include="Images\japan.jpg" />
     <Content Include="Images\kingdom.jpg" />
