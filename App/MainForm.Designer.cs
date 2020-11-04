@@ -42,7 +42,7 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox_USD_AMOUNT = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textbox_USD_BUY_RATE = new System.Windows.Forms.TextBox();
@@ -51,42 +51,46 @@
             this.textBox_USD_SELL_SUM = new System.Windows.Forms.TextBox();
             this.textBox_USD_SALE = new System.Windows.Forms.TextBox();
             this.textBox_USD_RUB = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox_EUR_RUB = new System.Windows.Forms.TextBox();
+            this.textBox_EUR_SALE = new System.Windows.Forms.TextBox();
+            this.textBox_EUR_SELL_SUM = new System.Windows.Forms.TextBox();
+            this.textbox_EUR_SELL_RATE = new System.Windows.Forms.TextBox();
+            this.textBox_EUR_BUY_SUM = new System.Windows.Forms.TextBox();
+            this.textbox_EUR_BUY_RATE = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.textBox_EUR_AMOUNT = new System.Windows.Forms.TextBox();
+            this.textBox_GBP_RUB = new System.Windows.Forms.TextBox();
+            this.textBox_GBP_SALE = new System.Windows.Forms.TextBox();
+            this.textBox_GBP_SELL_SUM = new System.Windows.Forms.TextBox();
+            this.textbox_GBP_SELL_RATE = new System.Windows.Forms.TextBox();
+            this.textBox_GBP_BUY_SUM = new System.Windows.Forms.TextBox();
+            this.textbox_GBP_BUY_RATE = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.textBox_GBP_AMOUNT = new System.Windows.Forms.TextBox();
+            this.textBox_CHF_RUB = new System.Windows.Forms.TextBox();
+            this.textBox_CHF_SALE = new System.Windows.Forms.TextBox();
+            this.textBox_CHF_SELL_SUM = new System.Windows.Forms.TextBox();
+            this.textbox_CHF_SELL_RATE = new System.Windows.Forms.TextBox();
+            this.textBox_CHF_BUY_SUM = new System.Windows.Forms.TextBox();
+            this.textbox_CHF_BUY_RATE = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox44 = new System.Windows.Forms.TextBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
-            this.textBox48 = new System.Windows.Forms.TextBox();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
+            this.textBox_CHF_AMOUNT = new System.Windows.Forms.TextBox();
+            this.textBox_JPY_RUB = new System.Windows.Forms.TextBox();
+            this.textBox_JPY_SALE = new System.Windows.Forms.TextBox();
+            this.textBox_JPY_SELL_SUM = new System.Windows.Forms.TextBox();
+            this.textbox_JPY_SELL_RATE = new System.Windows.Forms.TextBox();
+            this.textBox_JPY_BUY_SUM = new System.Windows.Forms.TextBox();
+            this.textbox_JPY_BUY_RATE = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textBox52 = new System.Windows.Forms.TextBox();
-            this.textBox53 = new System.Windows.Forms.TextBox();
+            this.textBox_JPY_AMOUNT = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -250,17 +254,17 @@
             this.textBox13.Text = "Сумма";
             this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox14
+            // textBox_USD_AMOUNT
             // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox14.Location = new System.Drawing.Point(1, 55);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(83, 23);
-            this.textBox14.TabIndex = 13;
-            this.textBox14.Text = "0";
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_USD_AMOUNT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_USD_AMOUNT.Location = new System.Drawing.Point(1, 55);
+            this.textBox_USD_AMOUNT.Multiline = true;
+            this.textBox_USD_AMOUNT.Name = "textBox_USD_AMOUNT";
+            this.textBox_USD_AMOUNT.ReadOnly = true;
+            this.textBox_USD_AMOUNT.Size = new System.Drawing.Size(83, 23);
+            this.textBox_USD_AMOUNT.TabIndex = 13;
+            this.textBox_USD_AMOUNT.Text = "0";
+            this.textBox_USD_AMOUNT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox15
             // 
@@ -350,78 +354,84 @@
             this.textBox_USD_RUB.Location = new System.Drawing.Point(791, 55);
             this.textBox_USD_RUB.Multiline = true;
             this.textBox_USD_RUB.Name = "textBox_USD_RUB";
+            this.textBox_USD_RUB.ReadOnly = true;
             this.textBox_USD_RUB.Size = new System.Drawing.Size(122, 23);
             this.textBox_USD_RUB.TabIndex = 21;
             this.textBox_USD_RUB.Text = "0";
             this.textBox_USD_RUB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox22
+            // textBox_EUR_RUB
             // 
-            this.textBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox22.Location = new System.Drawing.Point(791, 84);
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(122, 23);
-            this.textBox22.TabIndex = 30;
-            this.textBox22.Text = "0";
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_EUR_RUB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_EUR_RUB.Location = new System.Drawing.Point(791, 84);
+            this.textBox_EUR_RUB.Multiline = true;
+            this.textBox_EUR_RUB.Name = "textBox_EUR_RUB";
+            this.textBox_EUR_RUB.ReadOnly = true;
+            this.textBox_EUR_RUB.Size = new System.Drawing.Size(122, 23);
+            this.textBox_EUR_RUB.TabIndex = 30;
+            this.textBox_EUR_RUB.Text = "0";
+            this.textBox_EUR_RUB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_EUR_RUB.TextChanged += new System.EventHandler(this.textBox_EUR_RUB_TextChanged);
             // 
-            // textBox23
+            // textBox_EUR_SALE
             // 
-            this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox23.Location = new System.Drawing.Point(672, 84);
-            this.textBox23.Multiline = true;
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(125, 23);
-            this.textBox23.TabIndex = 29;
-            this.textBox23.Text = "0";
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_EUR_SALE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_EUR_SALE.Location = new System.Drawing.Point(672, 84);
+            this.textBox_EUR_SALE.Multiline = true;
+            this.textBox_EUR_SALE.Name = "textBox_EUR_SALE";
+            this.textBox_EUR_SALE.Size = new System.Drawing.Size(125, 23);
+            this.textBox_EUR_SALE.TabIndex = 29;
+            this.textBox_EUR_SALE.Text = "0";
+            this.textBox_EUR_SALE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_EUR_SALE.TextChanged += new System.EventHandler(this.textBox_EUR_SALE_TextChanged);
             // 
-            // textBox24
+            // textBox_EUR_SELL_SUM
             // 
-            this.textBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox24.Location = new System.Drawing.Point(574, 84);
-            this.textBox24.Multiline = true;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(99, 23);
-            this.textBox24.TabIndex = 28;
-            this.textBox24.Text = "0";
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_EUR_SELL_SUM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_EUR_SELL_SUM.Location = new System.Drawing.Point(574, 84);
+            this.textBox_EUR_SELL_SUM.Multiline = true;
+            this.textBox_EUR_SELL_SUM.Name = "textBox_EUR_SELL_SUM";
+            this.textBox_EUR_SELL_SUM.Size = new System.Drawing.Size(99, 23);
+            this.textBox_EUR_SELL_SUM.TabIndex = 28;
+            this.textBox_EUR_SELL_SUM.Text = "0";
+            this.textBox_EUR_SELL_SUM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_EUR_SELL_SUM.TextChanged += new System.EventHandler(this.textBox_EUR_SELL_SUM_TextChanged);
             // 
-            // textBox25
+            // textbox_EUR_SELL_RATE
             // 
-            this.textBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox25.Location = new System.Drawing.Point(467, 84);
-            this.textBox25.Multiline = true;
-            this.textBox25.Name = "textBox25";
-            this.textBox25.ReadOnly = true;
-            this.textBox25.Size = new System.Drawing.Size(113, 23);
-            this.textBox25.TabIndex = 27;
-            this.textBox25.Text = "93,20";
-            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textbox_EUR_SELL_RATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textbox_EUR_SELL_RATE.Location = new System.Drawing.Point(467, 84);
+            this.textbox_EUR_SELL_RATE.Multiline = true;
+            this.textbox_EUR_SELL_RATE.Name = "textbox_EUR_SELL_RATE";
+            this.textbox_EUR_SELL_RATE.ReadOnly = true;
+            this.textbox_EUR_SELL_RATE.Size = new System.Drawing.Size(113, 23);
+            this.textbox_EUR_SELL_RATE.TabIndex = 27;
+            this.textbox_EUR_SELL_RATE.Text = "93,20";
+            this.textbox_EUR_SELL_RATE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox26
+            // textBox_EUR_BUY_SUM
             // 
-            this.textBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox26.Location = new System.Drawing.Point(355, 84);
-            this.textBox26.Multiline = true;
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(113, 23);
-            this.textBox26.TabIndex = 26;
-            this.textBox26.Text = "0";
-            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_EUR_BUY_SUM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_EUR_BUY_SUM.Location = new System.Drawing.Point(355, 84);
+            this.textBox_EUR_BUY_SUM.Multiline = true;
+            this.textBox_EUR_BUY_SUM.Name = "textBox_EUR_BUY_SUM";
+            this.textBox_EUR_BUY_SUM.Size = new System.Drawing.Size(113, 23);
+            this.textBox_EUR_BUY_SUM.TabIndex = 26;
+            this.textBox_EUR_BUY_SUM.Text = "0";
+            this.textBox_EUR_BUY_SUM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_EUR_BUY_SUM.TextChanged += new System.EventHandler(this.textBox26_TextChanged);
             // 
-            // textBox27
+            // textbox_EUR_BUY_RATE
             // 
-            this.textBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox27.Location = new System.Drawing.Point(234, 84);
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.ReadOnly = true;
-            this.textBox27.Size = new System.Drawing.Size(124, 23);
-            this.textBox27.TabIndex = 25;
-            this.textBox27.Text = "92,86";
-            this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textbox_EUR_BUY_RATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textbox_EUR_BUY_RATE.Location = new System.Drawing.Point(234, 84);
+            this.textbox_EUR_BUY_RATE.Multiline = true;
+            this.textbox_EUR_BUY_RATE.Name = "textbox_EUR_BUY_RATE";
+            this.textbox_EUR_BUY_RATE.ReadOnly = true;
+            this.textbox_EUR_BUY_RATE.Size = new System.Drawing.Size(124, 23);
+            this.textbox_EUR_BUY_RATE.TabIndex = 25;
+            this.textbox_EUR_BUY_RATE.Text = "92,86";
+            this.textbox_EUR_BUY_RATE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox2
             // 
@@ -445,85 +455,89 @@
             this.textBox28.Text = "EUR";
             this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox29
+            // textBox_EUR_AMOUNT
             // 
-            this.textBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox29.Location = new System.Drawing.Point(1, 84);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.ReadOnly = true;
-            this.textBox29.Size = new System.Drawing.Size(83, 23);
-            this.textBox29.TabIndex = 22;
-            this.textBox29.Text = "0";
-            this.textBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_EUR_AMOUNT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_EUR_AMOUNT.Location = new System.Drawing.Point(1, 84);
+            this.textBox_EUR_AMOUNT.Multiline = true;
+            this.textBox_EUR_AMOUNT.Name = "textBox_EUR_AMOUNT";
+            this.textBox_EUR_AMOUNT.ReadOnly = true;
+            this.textBox_EUR_AMOUNT.Size = new System.Drawing.Size(83, 23);
+            this.textBox_EUR_AMOUNT.TabIndex = 22;
+            this.textBox_EUR_AMOUNT.Text = "0";
+            this.textBox_EUR_AMOUNT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox30
+            // textBox_GBP_RUB
             // 
-            this.textBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox30.Location = new System.Drawing.Point(791, 113);
-            this.textBox30.Multiline = true;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(122, 23);
-            this.textBox30.TabIndex = 39;
-            this.textBox30.Text = "0";
-            this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_GBP_RUB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_GBP_RUB.Location = new System.Drawing.Point(791, 113);
+            this.textBox_GBP_RUB.Multiline = true;
+            this.textBox_GBP_RUB.Name = "textBox_GBP_RUB";
+            this.textBox_GBP_RUB.ReadOnly = true;
+            this.textBox_GBP_RUB.Size = new System.Drawing.Size(122, 23);
+            this.textBox_GBP_RUB.TabIndex = 39;
+            this.textBox_GBP_RUB.Text = "0";
+            this.textBox_GBP_RUB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox31
+            // textBox_GBP_SALE
             // 
-            this.textBox31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox31.Location = new System.Drawing.Point(672, 113);
-            this.textBox31.Multiline = true;
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(125, 23);
-            this.textBox31.TabIndex = 38;
-            this.textBox31.Text = "0";
-            this.textBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_GBP_SALE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_GBP_SALE.Location = new System.Drawing.Point(672, 113);
+            this.textBox_GBP_SALE.Multiline = true;
+            this.textBox_GBP_SALE.Name = "textBox_GBP_SALE";
+            this.textBox_GBP_SALE.Size = new System.Drawing.Size(125, 23);
+            this.textBox_GBP_SALE.TabIndex = 38;
+            this.textBox_GBP_SALE.Text = "0";
+            this.textBox_GBP_SALE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_GBP_SALE.TextChanged += new System.EventHandler(this.textBox_GBP_SALE_TextChanged);
             // 
-            // textBox32
+            // textBox_GBP_SELL_SUM
             // 
-            this.textBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox32.Location = new System.Drawing.Point(574, 113);
-            this.textBox32.Multiline = true;
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(99, 23);
-            this.textBox32.TabIndex = 37;
-            this.textBox32.Text = "0";
-            this.textBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_GBP_SELL_SUM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_GBP_SELL_SUM.Location = new System.Drawing.Point(574, 113);
+            this.textBox_GBP_SELL_SUM.Multiline = true;
+            this.textBox_GBP_SELL_SUM.Name = "textBox_GBP_SELL_SUM";
+            this.textBox_GBP_SELL_SUM.Size = new System.Drawing.Size(99, 23);
+            this.textBox_GBP_SELL_SUM.TabIndex = 37;
+            this.textBox_GBP_SELL_SUM.Text = "0";
+            this.textBox_GBP_SELL_SUM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_GBP_SELL_SUM.TextChanged += new System.EventHandler(this.textBox_GBP_SELL_SUM_TextChanged);
             // 
-            // textBox33
+            // textbox_GBP_SELL_RATE
             // 
-            this.textBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox33.Location = new System.Drawing.Point(467, 113);
-            this.textBox33.Multiline = true;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.ReadOnly = true;
-            this.textBox33.Size = new System.Drawing.Size(113, 23);
-            this.textBox33.TabIndex = 36;
-            this.textBox33.Text = "103,1";
-            this.textBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textbox_GBP_SELL_RATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textbox_GBP_SELL_RATE.Location = new System.Drawing.Point(467, 113);
+            this.textbox_GBP_SELL_RATE.Multiline = true;
+            this.textbox_GBP_SELL_RATE.Name = "textbox_GBP_SELL_RATE";
+            this.textbox_GBP_SELL_RATE.ReadOnly = true;
+            this.textbox_GBP_SELL_RATE.Size = new System.Drawing.Size(113, 23);
+            this.textbox_GBP_SELL_RATE.TabIndex = 36;
+            this.textbox_GBP_SELL_RATE.Text = "103,1";
+            this.textbox_GBP_SELL_RATE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox34
+            // textBox_GBP_BUY_SUM
             // 
-            this.textBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox34.Location = new System.Drawing.Point(355, 113);
-            this.textBox34.Multiline = true;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(113, 23);
-            this.textBox34.TabIndex = 35;
-            this.textBox34.Text = "0";
-            this.textBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_GBP_BUY_SUM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_GBP_BUY_SUM.Location = new System.Drawing.Point(355, 113);
+            this.textBox_GBP_BUY_SUM.Multiline = true;
+            this.textBox_GBP_BUY_SUM.Name = "textBox_GBP_BUY_SUM";
+            this.textBox_GBP_BUY_SUM.Size = new System.Drawing.Size(113, 23);
+            this.textBox_GBP_BUY_SUM.TabIndex = 35;
+            this.textBox_GBP_BUY_SUM.Text = "0";
+            this.textBox_GBP_BUY_SUM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_GBP_BUY_SUM.TextChanged += new System.EventHandler(this.textBox_GBP_BUY_SUM_TextChanged);
             // 
-            // textBox35
+            // textbox_GBP_BUY_RATE
             // 
-            this.textBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox35.Location = new System.Drawing.Point(234, 113);
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.ReadOnly = true;
-            this.textBox35.Size = new System.Drawing.Size(124, 23);
-            this.textBox35.TabIndex = 34;
-            this.textBox35.Text = "102,5";
-            this.textBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textbox_GBP_BUY_RATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textbox_GBP_BUY_RATE.Location = new System.Drawing.Point(234, 113);
+            this.textbox_GBP_BUY_RATE.Multiline = true;
+            this.textbox_GBP_BUY_RATE.Name = "textbox_GBP_BUY_RATE";
+            this.textbox_GBP_BUY_RATE.ReadOnly = true;
+            this.textbox_GBP_BUY_RATE.Size = new System.Drawing.Size(124, 23);
+            this.textbox_GBP_BUY_RATE.TabIndex = 34;
+            this.textbox_GBP_BUY_RATE.Text = "102,5";
+            this.textbox_GBP_BUY_RATE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox3
             // 
@@ -547,85 +561,89 @@
             this.textBox36.Text = "GBP";
             this.textBox36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox37
+            // textBox_GBP_AMOUNT
             // 
-            this.textBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox37.Location = new System.Drawing.Point(1, 113);
-            this.textBox37.Multiline = true;
-            this.textBox37.Name = "textBox37";
-            this.textBox37.ReadOnly = true;
-            this.textBox37.Size = new System.Drawing.Size(83, 23);
-            this.textBox37.TabIndex = 31;
-            this.textBox37.Text = "0";
-            this.textBox37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_GBP_AMOUNT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_GBP_AMOUNT.Location = new System.Drawing.Point(1, 113);
+            this.textBox_GBP_AMOUNT.Multiline = true;
+            this.textBox_GBP_AMOUNT.Name = "textBox_GBP_AMOUNT";
+            this.textBox_GBP_AMOUNT.ReadOnly = true;
+            this.textBox_GBP_AMOUNT.Size = new System.Drawing.Size(83, 23);
+            this.textBox_GBP_AMOUNT.TabIndex = 31;
+            this.textBox_GBP_AMOUNT.Text = "0";
+            this.textBox_GBP_AMOUNT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox38
+            // textBox_CHF_RUB
             // 
-            this.textBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox38.Location = new System.Drawing.Point(791, 142);
-            this.textBox38.Multiline = true;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(122, 23);
-            this.textBox38.TabIndex = 48;
-            this.textBox38.Text = "0";
-            this.textBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_CHF_RUB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_CHF_RUB.Location = new System.Drawing.Point(791, 142);
+            this.textBox_CHF_RUB.Multiline = true;
+            this.textBox_CHF_RUB.Name = "textBox_CHF_RUB";
+            this.textBox_CHF_RUB.ReadOnly = true;
+            this.textBox_CHF_RUB.Size = new System.Drawing.Size(122, 23);
+            this.textBox_CHF_RUB.TabIndex = 48;
+            this.textBox_CHF_RUB.Text = "0";
+            this.textBox_CHF_RUB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox39
+            // textBox_CHF_SALE
             // 
-            this.textBox39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox39.Location = new System.Drawing.Point(672, 142);
-            this.textBox39.Multiline = true;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(125, 23);
-            this.textBox39.TabIndex = 47;
-            this.textBox39.Text = "0";
-            this.textBox39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_CHF_SALE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_CHF_SALE.Location = new System.Drawing.Point(672, 142);
+            this.textBox_CHF_SALE.Multiline = true;
+            this.textBox_CHF_SALE.Name = "textBox_CHF_SALE";
+            this.textBox_CHF_SALE.Size = new System.Drawing.Size(125, 23);
+            this.textBox_CHF_SALE.TabIndex = 47;
+            this.textBox_CHF_SALE.Text = "0";
+            this.textBox_CHF_SALE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_CHF_SALE.TextChanged += new System.EventHandler(this.textBox_CHF_SALE_TextChanged);
             // 
-            // textBox40
+            // textBox_CHF_SELL_SUM
             // 
-            this.textBox40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox40.Location = new System.Drawing.Point(574, 142);
-            this.textBox40.Multiline = true;
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(99, 23);
-            this.textBox40.TabIndex = 46;
-            this.textBox40.Text = "0";
-            this.textBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_CHF_SELL_SUM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_CHF_SELL_SUM.Location = new System.Drawing.Point(574, 142);
+            this.textBox_CHF_SELL_SUM.Multiline = true;
+            this.textBox_CHF_SELL_SUM.Name = "textBox_CHF_SELL_SUM";
+            this.textBox_CHF_SELL_SUM.Size = new System.Drawing.Size(99, 23);
+            this.textBox_CHF_SELL_SUM.TabIndex = 46;
+            this.textBox_CHF_SELL_SUM.Text = "0";
+            this.textBox_CHF_SELL_SUM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_CHF_SELL_SUM.TextChanged += new System.EventHandler(this.textBox_CHF_SELL_SUM_TextChanged);
             // 
-            // textBox41
+            // textbox_CHF_SELL_RATE
             // 
-            this.textBox41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox41.Location = new System.Drawing.Point(467, 142);
-            this.textBox41.Multiline = true;
-            this.textBox41.Name = "textBox41";
-            this.textBox41.ReadOnly = true;
-            this.textBox41.Size = new System.Drawing.Size(113, 23);
-            this.textBox41.TabIndex = 45;
-            this.textBox41.Text = "87,75";
-            this.textBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textbox_CHF_SELL_RATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textbox_CHF_SELL_RATE.Location = new System.Drawing.Point(467, 142);
+            this.textbox_CHF_SELL_RATE.Multiline = true;
+            this.textbox_CHF_SELL_RATE.Name = "textbox_CHF_SELL_RATE";
+            this.textbox_CHF_SELL_RATE.ReadOnly = true;
+            this.textbox_CHF_SELL_RATE.Size = new System.Drawing.Size(113, 23);
+            this.textbox_CHF_SELL_RATE.TabIndex = 45;
+            this.textbox_CHF_SELL_RATE.Text = "87,75";
+            this.textbox_CHF_SELL_RATE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox42
+            // textBox_CHF_BUY_SUM
             // 
-            this.textBox42.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox42.Location = new System.Drawing.Point(355, 142);
-            this.textBox42.Multiline = true;
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(113, 23);
-            this.textBox42.TabIndex = 44;
-            this.textBox42.Text = "0";
-            this.textBox42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_CHF_BUY_SUM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_CHF_BUY_SUM.Location = new System.Drawing.Point(355, 142);
+            this.textBox_CHF_BUY_SUM.Multiline = true;
+            this.textBox_CHF_BUY_SUM.Name = "textBox_CHF_BUY_SUM";
+            this.textBox_CHF_BUY_SUM.Size = new System.Drawing.Size(113, 23);
+            this.textBox_CHF_BUY_SUM.TabIndex = 44;
+            this.textBox_CHF_BUY_SUM.Text = "0";
+            this.textBox_CHF_BUY_SUM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_CHF_BUY_SUM.TextChanged += new System.EventHandler(this.textBox_CHF_BUY_SUM_TextChanged);
             // 
-            // textBox43
+            // textbox_CHF_BUY_RATE
             // 
-            this.textBox43.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox43.Location = new System.Drawing.Point(234, 142);
-            this.textBox43.Multiline = true;
-            this.textBox43.Name = "textBox43";
-            this.textBox43.ReadOnly = true;
-            this.textBox43.Size = new System.Drawing.Size(124, 23);
-            this.textBox43.TabIndex = 43;
-            this.textBox43.Text = "85,86";
-            this.textBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textbox_CHF_BUY_RATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textbox_CHF_BUY_RATE.Location = new System.Drawing.Point(234, 142);
+            this.textbox_CHF_BUY_RATE.Multiline = true;
+            this.textbox_CHF_BUY_RATE.Name = "textbox_CHF_BUY_RATE";
+            this.textbox_CHF_BUY_RATE.ReadOnly = true;
+            this.textbox_CHF_BUY_RATE.Size = new System.Drawing.Size(124, 23);
+            this.textbox_CHF_BUY_RATE.TabIndex = 43;
+            this.textbox_CHF_BUY_RATE.Text = "85,86";
+            this.textbox_CHF_BUY_RATE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox4
             // 
@@ -649,85 +667,89 @@
             this.textBox44.Text = "CHF";
             this.textBox44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox45
+            // textBox_CHF_AMOUNT
             // 
-            this.textBox45.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox45.Location = new System.Drawing.Point(1, 142);
-            this.textBox45.Multiline = true;
-            this.textBox45.Name = "textBox45";
-            this.textBox45.ReadOnly = true;
-            this.textBox45.Size = new System.Drawing.Size(83, 23);
-            this.textBox45.TabIndex = 40;
-            this.textBox45.Text = "0";
-            this.textBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_CHF_AMOUNT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_CHF_AMOUNT.Location = new System.Drawing.Point(1, 142);
+            this.textBox_CHF_AMOUNT.Multiline = true;
+            this.textBox_CHF_AMOUNT.Name = "textBox_CHF_AMOUNT";
+            this.textBox_CHF_AMOUNT.ReadOnly = true;
+            this.textBox_CHF_AMOUNT.Size = new System.Drawing.Size(83, 23);
+            this.textBox_CHF_AMOUNT.TabIndex = 40;
+            this.textBox_CHF_AMOUNT.Text = "0";
+            this.textBox_CHF_AMOUNT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox46
+            // textBox_JPY_RUB
             // 
-            this.textBox46.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox46.Location = new System.Drawing.Point(791, 171);
-            this.textBox46.Multiline = true;
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(122, 23);
-            this.textBox46.TabIndex = 57;
-            this.textBox46.Text = "0";
-            this.textBox46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_JPY_RUB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_JPY_RUB.Location = new System.Drawing.Point(791, 171);
+            this.textBox_JPY_RUB.Multiline = true;
+            this.textBox_JPY_RUB.Name = "textBox_JPY_RUB";
+            this.textBox_JPY_RUB.ReadOnly = true;
+            this.textBox_JPY_RUB.Size = new System.Drawing.Size(122, 23);
+            this.textBox_JPY_RUB.TabIndex = 57;
+            this.textBox_JPY_RUB.Text = "0";
+            this.textBox_JPY_RUB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox47
+            // textBox_JPY_SALE
             // 
-            this.textBox47.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox47.Location = new System.Drawing.Point(672, 171);
-            this.textBox47.Multiline = true;
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(125, 23);
-            this.textBox47.TabIndex = 56;
-            this.textBox47.Text = "0";
-            this.textBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_JPY_SALE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_JPY_SALE.Location = new System.Drawing.Point(672, 171);
+            this.textBox_JPY_SALE.Multiline = true;
+            this.textBox_JPY_SALE.Name = "textBox_JPY_SALE";
+            this.textBox_JPY_SALE.Size = new System.Drawing.Size(125, 23);
+            this.textBox_JPY_SALE.TabIndex = 56;
+            this.textBox_JPY_SALE.Text = "0";
+            this.textBox_JPY_SALE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_JPY_SALE.TextChanged += new System.EventHandler(this.textBox_JPY_SALE_TextChanged);
             // 
-            // textBox48
+            // textBox_JPY_SELL_SUM
             // 
-            this.textBox48.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox48.Location = new System.Drawing.Point(574, 171);
-            this.textBox48.Multiline = true;
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(99, 23);
-            this.textBox48.TabIndex = 55;
-            this.textBox48.Text = "0";
-            this.textBox48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_JPY_SELL_SUM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_JPY_SELL_SUM.Location = new System.Drawing.Point(574, 171);
+            this.textBox_JPY_SELL_SUM.Multiline = true;
+            this.textBox_JPY_SELL_SUM.Name = "textBox_JPY_SELL_SUM";
+            this.textBox_JPY_SELL_SUM.Size = new System.Drawing.Size(99, 23);
+            this.textBox_JPY_SELL_SUM.TabIndex = 55;
+            this.textBox_JPY_SELL_SUM.Text = "0";
+            this.textBox_JPY_SELL_SUM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_JPY_SELL_SUM.TextChanged += new System.EventHandler(this.textBox_JPY_SELL_SUM_TextChanged);
             // 
-            // textBox49
+            // textbox_JPY_SELL_RATE
             // 
-            this.textBox49.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox49.Location = new System.Drawing.Point(467, 171);
-            this.textBox49.Multiline = true;
-            this.textBox49.Name = "textBox49";
-            this.textBox49.ReadOnly = true;
-            this.textBox49.Size = new System.Drawing.Size(113, 23);
-            this.textBox49.TabIndex = 54;
-            this.textBox49.Text = "0,7586";
-            this.textBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textbox_JPY_SELL_RATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textbox_JPY_SELL_RATE.Location = new System.Drawing.Point(467, 171);
+            this.textbox_JPY_SELL_RATE.Multiline = true;
+            this.textbox_JPY_SELL_RATE.Name = "textbox_JPY_SELL_RATE";
+            this.textbox_JPY_SELL_RATE.ReadOnly = true;
+            this.textbox_JPY_SELL_RATE.Size = new System.Drawing.Size(113, 23);
+            this.textbox_JPY_SELL_RATE.TabIndex = 54;
+            this.textbox_JPY_SELL_RATE.Text = "0,7586";
+            this.textbox_JPY_SELL_RATE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox50
+            // textBox_JPY_BUY_SUM
             // 
-            this.textBox50.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox50.Location = new System.Drawing.Point(355, 171);
-            this.textBox50.Multiline = true;
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(113, 23);
-            this.textBox50.TabIndex = 53;
-            this.textBox50.Text = "0";
-            this.textBox50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_JPY_BUY_SUM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_JPY_BUY_SUM.Location = new System.Drawing.Point(355, 171);
+            this.textBox_JPY_BUY_SUM.Multiline = true;
+            this.textBox_JPY_BUY_SUM.Name = "textBox_JPY_BUY_SUM";
+            this.textBox_JPY_BUY_SUM.Size = new System.Drawing.Size(113, 23);
+            this.textBox_JPY_BUY_SUM.TabIndex = 53;
+            this.textBox_JPY_BUY_SUM.Text = "0";
+            this.textBox_JPY_BUY_SUM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_JPY_BUY_SUM.TextChanged += new System.EventHandler(this.textBox_JPY_BUY_SUM_TextChanged);
             // 
-            // textBox51
+            // textbox_JPY_BUY_RATE
             // 
-            this.textBox51.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox51.Location = new System.Drawing.Point(234, 171);
-            this.textBox51.Multiline = true;
-            this.textBox51.Name = "textBox51";
-            this.textBox51.ReadOnly = true;
-            this.textBox51.Size = new System.Drawing.Size(124, 23);
-            this.textBox51.TabIndex = 52;
-            this.textBox51.Text = "0,7475";
-            this.textBox51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textbox_JPY_BUY_RATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textbox_JPY_BUY_RATE.Location = new System.Drawing.Point(234, 171);
+            this.textbox_JPY_BUY_RATE.Multiline = true;
+            this.textbox_JPY_BUY_RATE.Name = "textbox_JPY_BUY_RATE";
+            this.textbox_JPY_BUY_RATE.ReadOnly = true;
+            this.textbox_JPY_BUY_RATE.Size = new System.Drawing.Size(124, 23);
+            this.textbox_JPY_BUY_RATE.TabIndex = 52;
+            this.textbox_JPY_BUY_RATE.Text = "0,7475";
+            this.textbox_JPY_BUY_RATE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox5
             // 
@@ -751,17 +773,51 @@
             this.textBox52.Text = "JPY";
             this.textBox52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox53
+            // textBox_JPY_AMOUNT
             // 
-            this.textBox53.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox53.Location = new System.Drawing.Point(1, 171);
-            this.textBox53.Multiline = true;
-            this.textBox53.Name = "textBox53";
-            this.textBox53.ReadOnly = true;
-            this.textBox53.Size = new System.Drawing.Size(83, 23);
-            this.textBox53.TabIndex = 49;
-            this.textBox53.Text = "0";
-            this.textBox53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_JPY_AMOUNT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox_JPY_AMOUNT.Location = new System.Drawing.Point(1, 171);
+            this.textBox_JPY_AMOUNT.Multiline = true;
+            this.textBox_JPY_AMOUNT.Name = "textBox_JPY_AMOUNT";
+            this.textBox_JPY_AMOUNT.ReadOnly = true;
+            this.textBox_JPY_AMOUNT.Size = new System.Drawing.Size(83, 23);
+            this.textBox_JPY_AMOUNT.TabIndex = 49;
+            this.textBox_JPY_AMOUNT.Text = "0";
+            this.textBox_JPY_AMOUNT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(320, 516);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(577, 23);
+            this.button1.TabIndex = 58;
+            this.button1.Text = "Сохранить";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox16.Location = new System.Drawing.Point(1, 516);
+            this.textBox16.Multiline = true;
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.Size = new System.Drawing.Size(200, 23);
+            this.textBox16.TabIndex = 59;
+            this.textBox16.Text = "Остаток нац. валюты";
+            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox17.Location = new System.Drawing.Point(207, 516);
+            this.textBox17.Multiline = true;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
+            this.textBox17.Size = new System.Drawing.Size(107, 23);
+            this.textBox17.TabIndex = 60;
+            this.textBox17.Text = "JPY";
+            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox17.TextChanged += new System.EventHandler(this.textBox17_TextChanged_1);
             // 
             // MainForm
             // 
@@ -769,42 +825,45 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(909, 551);
-            this.Controls.Add(this.textBox46);
-            this.Controls.Add(this.textBox47);
-            this.Controls.Add(this.textBox48);
-            this.Controls.Add(this.textBox49);
-            this.Controls.Add(this.textBox50);
-            this.Controls.Add(this.textBox51);
+            this.Controls.Add(this.textBox17);
+            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox_JPY_RUB);
+            this.Controls.Add(this.textBox_JPY_SALE);
+            this.Controls.Add(this.textBox_JPY_SELL_SUM);
+            this.Controls.Add(this.textbox_JPY_SELL_RATE);
+            this.Controls.Add(this.textBox_JPY_BUY_SUM);
+            this.Controls.Add(this.textbox_JPY_BUY_RATE);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.textBox52);
-            this.Controls.Add(this.textBox53);
-            this.Controls.Add(this.textBox38);
-            this.Controls.Add(this.textBox39);
-            this.Controls.Add(this.textBox40);
-            this.Controls.Add(this.textBox41);
-            this.Controls.Add(this.textBox42);
-            this.Controls.Add(this.textBox43);
+            this.Controls.Add(this.textBox_JPY_AMOUNT);
+            this.Controls.Add(this.textBox_CHF_RUB);
+            this.Controls.Add(this.textBox_CHF_SALE);
+            this.Controls.Add(this.textBox_CHF_SELL_SUM);
+            this.Controls.Add(this.textbox_CHF_SELL_RATE);
+            this.Controls.Add(this.textBox_CHF_BUY_SUM);
+            this.Controls.Add(this.textbox_CHF_BUY_RATE);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.textBox44);
-            this.Controls.Add(this.textBox45);
-            this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.textBox31);
-            this.Controls.Add(this.textBox32);
-            this.Controls.Add(this.textBox33);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox35);
+            this.Controls.Add(this.textBox_CHF_AMOUNT);
+            this.Controls.Add(this.textBox_GBP_RUB);
+            this.Controls.Add(this.textBox_GBP_SALE);
+            this.Controls.Add(this.textBox_GBP_SELL_SUM);
+            this.Controls.Add(this.textbox_GBP_SELL_RATE);
+            this.Controls.Add(this.textBox_GBP_BUY_SUM);
+            this.Controls.Add(this.textbox_GBP_BUY_RATE);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.textBox36);
-            this.Controls.Add(this.textBox37);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox27);
+            this.Controls.Add(this.textBox_GBP_AMOUNT);
+            this.Controls.Add(this.textBox_EUR_RUB);
+            this.Controls.Add(this.textBox_EUR_SALE);
+            this.Controls.Add(this.textBox_EUR_SELL_SUM);
+            this.Controls.Add(this.textbox_EUR_SELL_RATE);
+            this.Controls.Add(this.textBox_EUR_BUY_SUM);
+            this.Controls.Add(this.textbox_EUR_BUY_RATE);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.textBox29);
+            this.Controls.Add(this.textBox_EUR_AMOUNT);
             this.Controls.Add(this.textBox_USD_RUB);
             this.Controls.Add(this.textBox_USD_SALE);
             this.Controls.Add(this.textBox_USD_SELL_SUM);
@@ -813,7 +872,7 @@
             this.Controls.Add(this.textbox_USD_BUY_RATE);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.textBox_USD_AMOUNT);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox11);
@@ -854,7 +913,7 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox_USD_AMOUNT;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textbox_USD_BUY_RATE;
@@ -863,41 +922,45 @@
         private System.Windows.Forms.TextBox textBox_USD_SELL_SUM;
         private System.Windows.Forms.TextBox textBox_USD_SALE;
         private System.Windows.Forms.TextBox textBox_USD_RUB;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox textBox_EUR_RUB;
+        private System.Windows.Forms.TextBox textBox_EUR_SALE;
+        private System.Windows.Forms.TextBox textBox_EUR_SELL_SUM;
+        private System.Windows.Forms.TextBox textbox_EUR_SELL_RATE;
+        private System.Windows.Forms.TextBox textBox_EUR_BUY_SUM;
+        private System.Windows.Forms.TextBox textbox_EUR_BUY_RATE;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.TextBox textBox_EUR_AMOUNT;
+        private System.Windows.Forms.TextBox textBox_GBP_RUB;
+        private System.Windows.Forms.TextBox textBox_GBP_SALE;
+        private System.Windows.Forms.TextBox textBox_GBP_SELL_SUM;
+        private System.Windows.Forms.TextBox textbox_GBP_SELL_RATE;
+        private System.Windows.Forms.TextBox textBox_GBP_BUY_SUM;
+        private System.Windows.Forms.TextBox textbox_GBP_BUY_RATE;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox43;
+        private System.Windows.Forms.TextBox textBox_GBP_AMOUNT;
+        private System.Windows.Forms.TextBox textBox_CHF_RUB;
+        private System.Windows.Forms.TextBox textBox_CHF_SALE;
+        private System.Windows.Forms.TextBox textBox_CHF_SELL_SUM;
+        private System.Windows.Forms.TextBox textbox_CHF_SELL_RATE;
+        private System.Windows.Forms.TextBox textBox_CHF_BUY_SUM;
+        private System.Windows.Forms.TextBox textbox_CHF_BUY_RATE;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.TextBox textBox45;
-        private System.Windows.Forms.TextBox textBox46;
-        private System.Windows.Forms.TextBox textBox47;
-        private System.Windows.Forms.TextBox textBox48;
-        private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.TextBox textBox50;
-        private System.Windows.Forms.TextBox textBox51;
+        private System.Windows.Forms.TextBox textBox_CHF_AMOUNT;
+        private System.Windows.Forms.TextBox textBox_JPY_RUB;
+        private System.Windows.Forms.TextBox textBox_JPY_SALE;
+        private System.Windows.Forms.TextBox textBox_JPY_SELL_SUM;
+        private System.Windows.Forms.TextBox textbox_JPY_SELL_RATE;
+        private System.Windows.Forms.TextBox textBox_JPY_BUY_SUM;
+        private System.Windows.Forms.TextBox textbox_JPY_BUY_RATE;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox textBox52;
-        private System.Windows.Forms.TextBox textBox53;
+        private System.Windows.Forms.TextBox textBox_JPY_AMOUNT;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox17;
     }
 }
